@@ -8,13 +8,13 @@ public class StaticReference {
 
 	public static void main(String[] args) {
 		// Can call Addition method addition directly because it is static
-		BiFunction<Integer, Integer, Integer> sum = Calulate::addition;
+		BiFunction<Integer, Integer, Integer> sum = Calculate::addition;
 		System.out.println("The sum of 5 + 4 is " + sum.apply(5, 4));
 	}
 }
 
 // Class with a static method named addition
-class Calulate {
+class Calculate {
 	
 	public static int addition(int a, int b) {
 		return (a + b);
